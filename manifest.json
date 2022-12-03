@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "description": "Startpage inspired by Nord theme",
     "chrome_url_overrides": {
-      "newtab": "startpage.html"
+      "newtab": "main.html"
     },
     "content_security_policy": "script-src 'self'; script-src 'unsafe-inline'; object-src 'self';"
 }

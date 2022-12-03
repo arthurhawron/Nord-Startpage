@@ -2,22 +2,6 @@ let se = 3;
 
 //document.addEventListener("touchstart", function() {}, true);
 
-// The same as "onload"
-window.addEventListener('load', (event) => {
-    let today = new Date();
-    let time = today.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    displayTime(time);
-});
-
-setInterval(function () {
-    var today = new Date();
-    var time = today.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    document.getElementById("time").innerHTML = time;
-}, 1000);
-
-function displayTime(time) {
-    document.getElementById("time").innerHTML = time;
-}
 
 //-----------------------------------------------------------------------------------//
 // This part of the code takes care of the search engine, cycling and searching etc. //
@@ -44,9 +28,9 @@ const search_engines = [{
     placeholder: "DuckDuckGo",
     action: "https://www.duckduckgo.com/"
   }, {
-    src: "searxng.svg",
-    placeholder: "SearXNG",
-    action: "https://searx.be/?q="
+    src: "goog.svg",
+    placeholder: "Google",
+    action: "https://google.com/?q="
   },  {
     src: "reddit.svg",
     placeholder: "Reddit",
